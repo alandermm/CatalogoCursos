@@ -19,18 +19,19 @@ namespace CatalogoCursos.Dados
             contexto.Area.Add(area);
 
             var curso = new Curso(){
+                IdArea = area.Id,
                 Nome = "PHP"
             };
             contexto.Curso.Add(curso);
 
             var curso2 = new Curso(){
+                IdArea = area.Id,
                 Nome = "C#"
             };
             contexto.Curso.Add(curso2);
 
             var turma = new Turma(){
-                IdArea = 1,
-                IdCurso = 1,
+                IdCurso = curso.Id,
                 DataInicio = DateTime.Parse("09/02/2017"),
                 DataFim = DateTime.Parse("25/03/2017"),
                 DiasSemana = "2ª, 4ª, 6ª",
@@ -40,8 +41,7 @@ namespace CatalogoCursos.Dados
             contexto.Turma.Add(turma);
 
             var turma2 = new Turma(){
-                IdArea = 1,
-                IdCurso = 1,
+                IdCurso = curso.Id,
                 DataInicio = DateTime.Parse("17/02/2017"),
                 DataFim = DateTime.Parse("21/04/2017"),
                 DiasSemana = "Sábado",
@@ -52,8 +52,7 @@ namespace CatalogoCursos.Dados
             contexto.Turma.Add(turma2);
 
             var turma3 = new Turma(){
-                IdArea = 1,
-                IdCurso = 2,
+                IdCurso = curso2.Id,
                 DataInicio = DateTime.Parse("15/02/2017"),
                 DataFim = DateTime.Parse("25/03/2017"),
                 DiasSemana = "3ª, 5ª",

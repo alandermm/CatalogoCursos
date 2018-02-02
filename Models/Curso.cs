@@ -11,6 +11,9 @@ namespace CatalogoCursos.Models
         public int Id { get; set; }
 
         [Required]
+        public int IdArea { get; set; }
+
+        [Required]
         public string Nome { get; set; }
 
         public ICollection<Turma> Turma { get; set; }

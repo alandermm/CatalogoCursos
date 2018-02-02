@@ -11,9 +11,6 @@ namespace CatalogoCursos.Models
         public int Id { get; set; }
 
         [Required]
-        public int IdArea { get; set; }
-
-        [Required]
         public int IdCurso { get; set; }
 
         [Required]
