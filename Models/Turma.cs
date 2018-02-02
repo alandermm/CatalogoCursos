@@ -17,18 +17,22 @@ namespace CatalogoCursos.Models
         public int IdCurso { get; set; }
 
         [Required]
+        [DataType(DataType.Date)]
         public DateTime DataInicio { get; set; }
 
         [Required]
+        [DataType(DataType.Date)]
         public DateTime DataFim { get; set; }
 
         [Required]
         public string DiasSemana { get; set; }
 
         [Required]
+        [DataType(DataType.Time)]
         public DateTime HorarioInicio { get; set; }
 
         [Required]
+        [DataType(DataType.Time)]
         public DateTime HorarioFim { get; set; }
 
         public Curso Curso { get; set; }
