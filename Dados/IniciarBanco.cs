@@ -60,7 +60,6 @@ namespace CatalogoCursos.Dados
                 HorarioFim = DateTime.Parse("22:00"),
             };
             contexto.Turma.Add(turma3);
-
             contexto.SaveChanges();
         }
     }
