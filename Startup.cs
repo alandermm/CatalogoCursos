@@ -55,7 +55,7 @@ namespace CatalogoCursos
             app.UseMvc();
             app.UseSwagger();
             app.UseSwaggerUI(c => {
-                c.SwaggerEndpoint("/swagger/v1/swagger.json", "API V1");
+                c.SwaggerEndpoint("/swagger/V1/swagger.json", "API V1");
             });
 
             app.Run(async (context) =>

@@ -12,9 +12,9 @@ namespace CatalogoCursos.Dados
         public DbSet<Turma> Turma { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder){
-            modelBuilder.Entity<Area>().ToTable("Areas");
-            modelBuilder.Entity<Curso>().ToTable("Cursos");
-            modelBuilder.Entity<Turma>().ToTable("Turmas");
+            modelBuilder.Entity<Area>().ToTable("Area");
+            modelBuilder.Entity<Curso>().ToTable("Curso");
+            modelBuilder.Entity<Turma>().ToTable("Turma");
         }
     }
 }

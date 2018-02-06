@@ -32,6 +32,7 @@ namespace CatalogoCursos.Models
         [DataType(DataType.Time)]
         public DateTime HorarioFim { get; set; }
 
+        [ForeignKey("IdCurso")]
         public Curso Curso { get; set; }
     }
 }

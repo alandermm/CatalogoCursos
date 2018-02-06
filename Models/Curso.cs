@@ -17,6 +17,8 @@ namespace CatalogoCursos.Models
         public string Nome { get; set; }
 
         public ICollection<Turma> Turma { get; set; }
+
+        [ForeignKey("IdArea")]
         public Area Area { get; set; }
     }
 }
