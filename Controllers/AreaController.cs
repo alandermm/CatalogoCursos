@@ -143,7 +143,7 @@ namespace CatalogoCursos.Controllers
 
                 contexto.Area.Update(ar);
                 contexto.SaveChanges();
-                Ok(ar);
+                return Ok(ar);
                 } catch (System.Exception ex){
                     return BadRequest(ex.Message);
                 }
